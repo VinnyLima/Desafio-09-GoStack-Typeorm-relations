@@ -12,6 +12,7 @@ export default class CreateOrdersProducts1597712671248
             type: 'uuid',
             isPrimary: true,
             generationStrategy: 'uuid',
+            default: 'uuid_generate_v4()',
           },
           {
             name: 'price',
@@ -24,12 +25,12 @@ export default class CreateOrdersProducts1597712671248
             type: 'int',
           },
           {
-            name: 'create_at',
+            name: 'created_at',
             type: 'timestamp',
             default: 'now()',
           },
           {
-            name: 'update_at',
+            name: 'updated_at',
             type: 'timestamp',
             default: 'now()',
           },
