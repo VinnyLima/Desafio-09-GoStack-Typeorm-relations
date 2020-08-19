@@ -17,7 +17,7 @@ class Order {
   id: string;
 
   @ManyToOne(() => Customer)
-  @JoinColumn({ name: 'customer_id' })
+  @JoinColumn({ name: 'id' })
   customer: Customer;
 
   @OneToMany(() => OrdersProducts, order_products => order_products.order, {
